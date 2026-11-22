@@ -36,6 +36,7 @@ def create_user(payload: UserCreate):
 @router.get("", response_model=list[UserOut])
 def list_users():
     """List all users."""
+    print("Testing users")
     return list(db.users_db.values())
 
 
